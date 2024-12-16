@@ -1,0 +1,20 @@
+# Cimetières de guerre
+
+Si vous avez R et Rstudio installés sur votre ordinateur, ouvrez le fichier [war_cemeteries.Rmd](war_cemeteries.Rmd)
+Essayez de l'exécuter (knit > knit to html)
+Normalement, sauf si les deux packages *WikidataR* et *Leaflet* sont déjà téléchargés sur votre machine, vous devriez avoir un message d'erreur vous indiquant que ces packages suivants manquent pour R. 
+
+Nous n'allons pas télécharger ces deux packages (il pourrait y en avoir bien plus que deux), mais plutôt profiter du fait que le concepteur a prévu un environnement virtuel qui les contient (Renv)
+Pour l'utiliser, dans la console, tapez 
+
+```
+renv::restore()
+```
+
+Cela va charger tous les packages nécessaires pour faire fonctionner le script à savoir WikidataR et leaflet qui sont enregistrés dans le fichier renv.lock 
+
+Si vous deviez enrichir ce document et utilisez des fonctions qui requièrent le chargement de nouvelle librairies, après avoir chargé ces librairies, vous pourriez mettre à jour la liste des packages dans le fichier renv.lock en entrant dans la console : 
+
+```
+renv::snapshot
+```
