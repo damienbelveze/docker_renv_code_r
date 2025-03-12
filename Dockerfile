@@ -1,8 +1,8 @@
-FROM ubuntu:20.04
+#FROM ubuntu:20.04
 FROM r-base:4.4.1
-MAINTAINER Damien Belvèze <damien.belveze@univ-rennes.fr>
+#MAINTAINER Damien Belvèze <damien.belveze@univ-rennes.fr>
 
-ENV RENV_VERSION 1.0.7
+ENV RENV_VERSION=1.0.7
 #RUN apt update && apt install -y curl
 #RUN RENV_WATCHDOG_ENABLED = FALSE
 
